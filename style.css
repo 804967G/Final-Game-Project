@@ -1,0 +1,109 @@
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body, html {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .container {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .background-image, .background-image2 {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .overlay-image,
+    .overlay-imaget,
+    .overlay-imagett,
+    .overlay-imagettt,
+    .overlay-imagetttt,
+    .overlay-imagettttt {
+      position: absolute;
+      width: 200px;
+      height: auto;
+      cursor: pointer;
+    }
+
+    .overlay-imaget { top: 320px; left: 1600px; }
+    .overlay-imagett { top: 450px; left: 1450px; width: 150px; }
+
+    .direction-text {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 10px;
+      font-family: sans-serif;
+      font-size: 16px;
+      border-radius: 5px;
+      transition: opacity 0.5s ease;
+    }
+
+    .dialogue-box {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 20px;
+      font-family: sans-serif;
+      font-size: 18px;
+      max-width: 80%;
+      text-align: center;
+      border-radius: 10px;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+
+    #scene1.fade-out {
+      opacity: 0;
+      transition: opacity 0.8s ease;
+      pointer-events: none;
+    }
+
+    #circleGameContainer {
+      display: none;
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      background-color: black;
+    }
+
+    .circle {
+      width: 100px;
+      height: 100px;
+      background-color: #5D3FD3;
+      border-radius: 50%;
+      transition: opacity 0.5s ease-out;
+      cursor: pointer;
+      position: absolute;
+    }
+
+    .circle.fade-out {
+      opacity: 0;
+    }
+    .circle:active {
+      cursor: crosshair;
+    }
+
+    #scoreboard {
+      display: none;
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 30px;
+      color: white;
+      font-family: sans-serif;
+}
+    
